@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddRateViewController" customModule="groceryApp" customModuleProvider="target">
+            <connections>
+                <outlet property="RatingView" destination="klX-um-Dhn" id="qEd-At-wA1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ja9-ag-1Ax">
+                    <rect key="frame" x="57" y="323" width="300" height="250"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="please rate our service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6E-uE-GIm">
+                            <rect key="frame" x="10" y="64.5" width="290" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.066666666669999999" green="0.31372549020000001" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3k-aa-P1J">
+                            <rect key="frame" x="10" y="164" width="280" height="1"/>
+                            <color key="backgroundColor" red="0.066666666669999999" green="0.31372549020000001" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Pkj-9a-33o"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LZm-Rq-MnS">
+                            <rect key="frame" x="10" y="165" width="280" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxr-3d-CaB">
+                                    <rect key="frame" x="0.0" y="0.0" width="140" height="30"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                    <state key="normal" title="Done">
+                                        <color key="titleColor" red="0.066666666669999999" green="0.31372549020000001" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="DoneBtn:" destination="-1" eventType="touchUpInside" id="c5J-6B-MqH"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNn-gE-PGv">
+                                    <rect key="frame" x="140" y="0.0" width="140" height="30"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                    <state key="normal" title="Skip">
+                                        <color key="titleColor" red="0.066666666669999999" green="0.31372549020000001" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="SkipBtn:" destination="-1" eventType="touchUpInside" id="0hg-v5-KfA"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="opu-eq-S5E"/>
+                            </constraints>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klX-um-Dhn" customClass="CosmosView" customModule="Cosmos">
+                            <rect key="frame" x="40" y="105" width="220" height="40"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                    <real key="value" value="40"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="LZm-Rq-MnS" firstAttribute="top" secondItem="klX-um-Dhn" secondAttribute="bottom" constant="20" id="1tR-eE-i4q"/>
+                        <constraint firstAttribute="width" constant="300" id="V3e-JA-eOW"/>
+                        <constraint firstItem="klX-um-Dhn" firstAttribute="centerX" secondItem="Ja9-ag-1Ax" secondAttribute="centerX" id="Wr8-1R-Nox"/>
+                        <constraint firstAttribute="trailing" secondItem="LZm-Rq-MnS" secondAttribute="trailing" constant="10" id="XCq-X8-XbI"/>
+                        <constraint firstItem="H3k-aa-P1J" firstAttribute="trailing" secondItem="LZm-Rq-MnS" secondAttribute="trailing" id="aD4-Qn-ncv"/>
+                        <constraint firstAttribute="trailing" secondItem="L6E-uE-GIm" secondAttribute="trailing" id="fyu-v7-kFC"/>
+                        <constraint firstItem="LZm-Rq-MnS" firstAttribute="leading" secondItem="Ja9-ag-1Ax" secondAttribute="leading" constant="10" id="gIk-qm-UEr"/>
+                        <constraint firstItem="klX-um-Dhn" firstAttribute="centerY" secondItem="Ja9-ag-1Ax" secondAttribute="centerY" id="gdL-cz-vTz"/>
+                        <constraint firstAttribute="height" constant="250" id="iPP-4V-HVh"/>
+                        <constraint firstItem="H3k-aa-P1J" firstAttribute="leading" secondItem="LZm-Rq-MnS" secondAttribute="leading" id="n00-s8-uy5"/>
+                        <constraint firstItem="L6E-uE-GIm" firstAttribute="leading" secondItem="Ja9-ag-1Ax" secondAttribute="leading" constant="10" id="pvb-F9-mbf"/>
+                        <constraint firstItem="LZm-Rq-MnS" firstAttribute="top" secondItem="H3k-aa-P1J" secondAttribute="bottom" id="rpQ-wV-945"/>
+                        <constraint firstItem="klX-um-Dhn" firstAttribute="top" secondItem="L6E-uE-GIm" secondAttribute="bottom" constant="20" id="zID-ei-mWF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.066666666666666666" green="0.31372549019607843" blue="0.33725490196078434" alpha="0.24970569349315069" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Ja9-ag-1Ax" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7wk-gp-d4y"/>
+                <constraint firstItem="Ja9-ag-1Ax" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="sKa-FR-qjW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="77.678571428571431"/>
+        </view>
+    </objects>
+</document>
