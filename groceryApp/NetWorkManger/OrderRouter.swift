@@ -15,19 +15,20 @@ enum OrderRouter: APIRouter {
     case getOsrderdata(parameters : Parameters)
     case Shoppers
     case Reviews(parameters : Parameters)
+    case RegisterOrder(parameters : Parameters)
     
     var method: HTTPMethod {
         switch self {
         case .MyOrders,.Shoppers:
             return .get
-        case .getOsrderdata, .Reviews:
+        case .getOsrderdata, .Reviews, .RegisterOrder:
             return .post
         }
     }
     
     var path: String {
         switch self {
-        case .MyOrders, .getOsrderdata:
+        case .MyOrders, .getOsrderdata, .RegisterOrder:
             return "Orders"
         case .Shoppers:
             return "Shoppers"
@@ -44,19 +45,21 @@ enum OrderRouter: APIRouter {
             return parameters
         case .Reviews(let parameters):
             return parameters
+        case .RegisterOrder(let parameters):
+            return parameters
         }
     }
     
     var encoding: ParameterEncoding {
         switch self {
-        case .MyOrders ,  .getOsrderdata, .Shoppers, .Reviews:
+        case .MyOrders ,  .getOsrderdata, .Shoppers, .Reviews, .RegisterOrder:
             return JSONEncoding.default
         }
     }
     
     var header: HTTPHeaders {
         switch self {
-        case .MyOrders , .getOsrderdata , .Shoppers, .Reviews:
+        case .MyOrders , .getOsrderdata , .Shoppers, .Reviews, .RegisterOrder:
             let header = HTTPHeaders([HTTPHeader(name: "Content-Type", value: "application/json; charset=UTF-8")])
             return header
         }

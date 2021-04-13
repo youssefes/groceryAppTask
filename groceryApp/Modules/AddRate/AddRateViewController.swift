@@ -27,7 +27,7 @@ class AddRateViewController: BaseWireFrame<AddrateViewModel> {
             print(reViewRespond)
             self.dismiss(animated: true, completion: nil)
         }, onError: { (error) in
-            print(error)
+             self.presentAlertWith(msg: error.localizedDescription, {})
         }).disposed(by: disposePag)
         
     }

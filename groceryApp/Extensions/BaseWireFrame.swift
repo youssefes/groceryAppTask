@@ -36,6 +36,26 @@ class BaseWireFrame <T>: UIViewController {
         self.setNeedsStatusBarAppearanceUpdate()
         bind(ViewModel: viewModel)
     }
+    
+    func presentAlertWith(title: String = "Elmowsalaty", msg: String, _ completion: @escaping () ->Void) {
+         let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
+         // custom alert font
+         let titleFont = [NSAttributedString.Key.font: UIFont(name: "Roboto-Regular", size: 17.0)!]
+         let messageFont = [NSAttributedString.Key.font: UIFont(name: "Roboto-Regular", size: 15.0)!]
+         
+         let titleAttrString = NSMutableAttributedString(string: "Elmowsalaty", attributes: titleFont)
+         let messageAttrString = NSMutableAttributedString(string: msg, attributes: messageFont)
+         
+         alert.setValue(titleAttrString, forKey: "attributedTitle")
+         alert.setValue(messageAttrString, forKey: "attributedMessage")
+         // End custom
+         present(alert, animated: true) {
+             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                 alert.dismiss(animated: true, completion: nil)
+                 completion()
+             }
+         }
+     }
 
 
     required init?(coder: NSCoder) {

@@ -33,6 +33,7 @@ struct Value: Codable {
     let latitude, longitude: Double?
 }
 
+
 typealias OrdersModel = [OrdersModelElement]
 
 

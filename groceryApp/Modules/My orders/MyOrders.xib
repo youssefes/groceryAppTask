@@ -32,11 +32,31 @@
                     <rect key="frame" x="20" y="153.5" width="374" height="722.5"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDo-Qk-Zxq">
+                    <rect key="frame" x="294" y="64" width="100" height="30"/>
+                    <color key="backgroundColor" red="0.066666666669999999" green="0.31372549020000001" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Ubt-ub-F4X"/>
+                        <constraint firstAttribute="width" constant="100" id="x0f-cJ-bSJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="New Order">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="newOrder:" destination="-1" eventType="touchUpInside" id="4cC-le-49q"/>
+                    </connections>
+                </button>
                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dmd-Tp-LTk">
-                    <rect key="frame" x="20" y="64" width="374" height="29.5"/>
+                    <rect key="frame" x="130" y="64" width="154" height="29.5"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="251" text="My Orders" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3T-Bh-8b6">
-                            <rect key="frame" x="0.0" y="0.0" width="374" height="29.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="154" height="29.5"/>
                             <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="25"/>
                             <color key="textColor" red="0.023529411760000001" green="0.24313725489999999" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
@@ -67,20 +87,22 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="VSn-r7-KwF" firstAttribute="leading" secondItem="Dmd-Tp-LTk" secondAttribute="leading" id="0br-h3-YJu"/>
-                <constraint firstItem="Dmd-Tp-LTk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="3rY-f1-CYO"/>
+                <constraint firstItem="VSn-r7-KwF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="BGS-GX-kNU"/>
                 <constraint firstItem="rhq-Up-mfI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="EJ4-wM-tfA"/>
                 <constraint firstItem="rhq-Up-mfI" firstAttribute="top" secondItem="hCa-Sm-1fa" secondAttribute="bottom" constant="15" id="Ivp-7N-DYi"/>
                 <constraint firstItem="Con-VK-9w3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Nlp-kD-6WK"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Dmd-Tp-LTk" secondAttribute="trailing" constant="20" id="Nya-Qc-XTO"/>
                 <constraint firstItem="VSn-r7-KwF" firstAttribute="bottom" secondItem="Dmd-Tp-LTk" secondAttribute="bottom" constant="30" id="SaU-es-AQE"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Con-VK-9w3" secondAttribute="trailing" constant="20" id="Tnj-AV-9we"/>
-                <constraint firstItem="VSn-r7-KwF" firstAttribute="trailing" secondItem="Dmd-Tp-LTk" secondAttribute="trailing" id="ZBq-1q-0bD"/>
+                <constraint firstItem="VSn-r7-KwF" firstAttribute="trailing" secondItem="GDo-Qk-Zxq" secondAttribute="trailing" id="a8m-b3-YUA"/>
                 <constraint firstAttribute="bottom" secondItem="Con-VK-9w3" secondAttribute="bottom" constant="20" id="bMn-rB-zHi"/>
+                <constraint firstItem="Dmd-Tp-LTk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cPh-fo-DCA"/>
                 <constraint firstItem="Con-VK-9w3" firstAttribute="top" secondItem="VSn-r7-KwF" secondAttribute="bottom" constant="30" id="g6g-QE-faa"/>
+                <constraint firstItem="GDo-Qk-Zxq" firstAttribute="leading" secondItem="Dmd-Tp-LTk" secondAttribute="trailing" constant="10" id="gaY-Xs-3Lw"/>
                 <constraint firstItem="Dmd-Tp-LTk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="kKf-hJ-7GO"/>
                 <constraint firstItem="hCa-Sm-1fa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tsi-uJ-RNM"/>
+                <constraint firstItem="GDo-Qk-Zxq" firstAttribute="centerY" secondItem="I3T-Bh-8b6" secondAttribute="centerY" id="txU-K2-VBC"/>
                 <constraint firstItem="rhq-Up-mfI" firstAttribute="centerX" secondItem="Con-VK-9w3" secondAttribute="centerX" id="wTw-ik-s5J"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GDo-Qk-Zxq" secondAttribute="trailing" constant="20" id="zaw-Z1-0Dc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="44.927536231884062" y="75.669642857142847"/>

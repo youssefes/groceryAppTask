@@ -17,6 +17,8 @@ class MainNavigator : Navigator {
         case OrdersViewController
         case orderDetailes(orderId : Int)
         case AddRate
+        case ShowMap
+        case RegisterOrder
  
     }
     required init(coordintor: Coordinator) {
@@ -37,6 +39,14 @@ class MainNavigator : Navigator {
         case .AddRate:
             let addRateViewModel = AddrateViewModel()
             let view = AddRateViewController(ViewModel: addRateViewModel, coordinator: coordinator)
+            return view
+        case .ShowMap:
+            let mapviewModel = mapViewModel()
+            let view = mapViewController(ViewModel: mapviewModel, coordinator: coordinator)
+            return view
+        case .RegisterOrder:
+            let RegisterviewModel = RegisterOrderViewModel()
+            let view = RegisterOrdersViewController(ViewModel: RegisterviewModel, coordinator: coordinator)
             return view
         }
     }

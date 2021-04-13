@@ -27,11 +27,5 @@ class MyOrdersViewModel {
     }
     
     
-    func getShopper(){
-        ordersRepository.getShoppers().subscribe(onNext: { (Shopper) in
-            print(Shopper)
-        }, onError: { (error) in
-             print(error)
-        }).disposed(by: dispoBag)
-    }
+   
 }

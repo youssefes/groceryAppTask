@@ -16,6 +16,21 @@ class OrdersRepository {
         self.networkClient = networkClient
     }
     
+    func RegisterOrder(parameters: Parameters) -> Observable<OrdersModelElement>{
+           Observable<OrdersModelElement>.create { [weak self] (items) -> Disposable in
+               self?.networkClient.performRequest(OrdersModelElement.self, router: OrderRouter.RegisterOrder(parameters: parameters)) { (resulte) in
+                   switch resulte{
+                   case .success(let data):
+                       items.onNext(data)
+                       items.onCompleted()
+                   case .failure(let error):
+                       items.onError(error)
+                   }
+               }
+               return Disposables.create()
+           }
+       }
+    
     func getMyOrders() -> Observable<OrdersModel>{
         Observable<OrdersModel>.create { [weak self] (items) -> Disposable in
             self?.networkClient.performRequest(OrdersModel.self, router: OrderRouter.MyOrders) { (resulte) in

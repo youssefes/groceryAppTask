@@ -48,5 +48,9 @@
 		<string>Cairo-Black.ttf</string>
 		<string>Cairo-Bold.ttf</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>want get access your location </string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>want get access your location </string>
 </dict>
 </plist>

@@ -50,7 +50,7 @@ class orderDetailesViewController: BaseWireFrame<orderDetailesViewModel> {
             self.orderNameLbl.text = orderData.name
             self.containerView.isHidden = false
         }, onError: { (error) in
-            print(error)
+             self.presentAlertWith(msg: error.localizedDescription, {})
         }).disposed(by: disposePag)
         
          // MARK: - getOrderData

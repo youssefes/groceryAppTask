@@ -14,6 +14,17 @@
 		E846E3492623696B00474CB0 /* orderDetailesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846E3462623696B00474CB0 /* orderDetailesViewController.swift */; };
 		E846E34C2623793000474CB0 /* ItemOfOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846E34A2623793000474CB0 /* ItemOfOrderTableViewCell.swift */; };
 		E846E34D2623793000474CB0 /* ItemOfOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E846E34B2623793000474CB0 /* ItemOfOrderTableViewCell.xib */; };
+		E849F045262650D90023ACC7 /* QuantityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E849F043262650D90023ACC7 /* QuantityView.swift */; };
+		E849F046262650D90023ACC7 /* QuantityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E849F044262650D90023ACC7 /* QuantityView.xib */; };
+		E8B159B92625F13E00D7C3C7 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B159AD2625F13E00D7C3C7 /* mapViewController.swift */; };
+		E8B159BA2625F13E00D7C3C7 /* mapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B159AE2625F13E00D7C3C7 /* mapViewController.xib */; };
+		E8B159BB2625F13E00D7C3C7 /* mapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B159B12625F13E00D7C3C7 /* mapTableViewCell.xib */; };
+		E8B159BC2625F13E00D7C3C7 /* mapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B159B22625F13E00D7C3C7 /* mapTableViewCell.swift */; };
+		E8B159BD2625F13E00D7C3C7 /* mapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B159B32625F13E00D7C3C7 /* mapViewModel.swift */; };
+		E8B159BF2625FA9300D7C3C7 /* RegisterOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B159BE2625FA9300D7C3C7 /* RegisterOrderViewModel.swift */; };
+		E8B159C12625FBB900D7C3C7 /* locationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B159C02625FBB900D7C3C7 /* locationModel.swift */; };
+		E8B159C42625FD5F00D7C3C7 /* RegisterOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B159C22625FD5F00D7C3C7 /* RegisterOrdersViewController.swift */; };
+		E8B159C52625FD5F00D7C3C7 /* RegisterOrdersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B159C32625FD5F00D7C3C7 /* RegisterOrdersViewController.xib */; };
 		E8F04D2426232B9C0005276D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F04D2326232B9C0005276D /* AppDelegate.swift */; };
 		E8F04D2D26232BA90005276D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F04D2C26232BA90005276D /* Assets.xcassets */; };
 		E8F04D3026232BA90005276D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8F04D2E26232BA90005276D /* LaunchScreen.storyboard */; };
@@ -80,6 +91,17 @@
 		E846E3462623696B00474CB0 /* orderDetailesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = orderDetailesViewController.swift; sourceTree = "<group>"; };
 		E846E34A2623793000474CB0 /* ItemOfOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemOfOrderTableViewCell.swift; sourceTree = "<group>"; };
 		E846E34B2623793000474CB0 /* ItemOfOrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemOfOrderTableViewCell.xib; sourceTree = "<group>"; };
+		E849F043262650D90023ACC7 /* QuantityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuantityView.swift; sourceTree = "<group>"; };
+		E849F044262650D90023ACC7 /* QuantityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuantityView.xib; sourceTree = "<group>"; };
+		E8B159AD2625F13E00D7C3C7 /* mapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		E8B159AF2625F13E00D7C3C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/mapViewController.xib; sourceTree = "<group>"; };
+		E8B159B12625F13E00D7C3C7 /* mapTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mapTableViewCell.xib; sourceTree = "<group>"; };
+		E8B159B22625F13E00D7C3C7 /* mapTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapTableViewCell.swift; sourceTree = "<group>"; };
+		E8B159B32625F13E00D7C3C7 /* mapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapViewModel.swift; sourceTree = "<group>"; };
+		E8B159BE2625FA9300D7C3C7 /* RegisterOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterOrderViewModel.swift; sourceTree = "<group>"; };
+		E8B159C02625FBB900D7C3C7 /* locationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationModel.swift; sourceTree = "<group>"; };
+		E8B159C22625FD5F00D7C3C7 /* RegisterOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterOrdersViewController.swift; sourceTree = "<group>"; };
+		E8B159C32625FD5F00D7C3C7 /* RegisterOrdersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterOrdersViewController.xib; sourceTree = "<group>"; };
 		E8F04D2026232B9C0005276D /* groceryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = groceryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F04D2326232B9C0005276D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8F04D2C26232BA90005276D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -188,6 +210,56 @@
 			path = itemsCell;
 			sourceTree = "<group>";
 		};
+		E849F041262650400023ACC7 /* Commen */ = {
+			isa = PBXGroup;
+			children = (
+				E8F04D3126232BA90005276D /* Info.plist */,
+				E8F04D2E26232BA90005276D /* LaunchScreen.storyboard */,
+				E8F04D2C26232BA90005276D /* Assets.xcassets */,
+				E8F04D2326232B9C0005276D /* AppDelegate.swift */,
+			);
+			path = Commen;
+			sourceTree = "<group>";
+		};
+		E849F042262650D90023ACC7 /* QuantityView */ = {
+			isa = PBXGroup;
+			children = (
+				E849F043262650D90023ACC7 /* QuantityView.swift */,
+				E849F044262650D90023ACC7 /* QuantityView.xib */,
+			);
+			path = QuantityView;
+			sourceTree = "<group>";
+		};
+		E8B159A42625F13C00D7C3C7 /* RegisterOrdersViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E8B159C22625FD5F00D7C3C7 /* RegisterOrdersViewController.swift */,
+				E8B159C32625FD5F00D7C3C7 /* RegisterOrdersViewController.xib */,
+				E8B159BE2625FA9300D7C3C7 /* RegisterOrderViewModel.swift */,
+			);
+			path = RegisterOrdersViewController;
+			sourceTree = "<group>";
+		};
+		E8B159AA2625F13E00D7C3C7 /* mapVc */ = {
+			isa = PBXGroup;
+			children = (
+				E8B159B02625F13E00D7C3C7 /* cell */,
+				E8B159AD2625F13E00D7C3C7 /* mapViewController.swift */,
+				E8B159AE2625F13E00D7C3C7 /* mapViewController.xib */,
+				E8B159B32625F13E00D7C3C7 /* mapViewModel.swift */,
+			);
+			path = mapVc;
+			sourceTree = "<group>";
+		};
+		E8B159B02625F13E00D7C3C7 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E8B159B12625F13E00D7C3C7 /* mapTableViewCell.xib */,
+				E8B159B22625F13E00D7C3C7 /* mapTableViewCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		E8F04D1726232B9C0005276D = {
 			isa = PBXGroup;
 			children = (
@@ -211,16 +283,13 @@
 		E8F04D2226232B9C0005276D /* groceryApp */ = {
 			isa = PBXGroup;
 			children = (
-				E8F04D2326232B9C0005276D /* AppDelegate.swift */,
+				E849F041262650400023ACC7 /* Commen */,
 				E8F04D5926232FC10005276D /* NetWorkManger */,
 				E8F04D4E26232F500005276D /* Coordinator */,
 				E8F04D4526232F3E0005276D /* Extensions */,
 				E8F04D62262330160005276D /* DesignSystem */,
 				E8F04D9726233ED90005276D /* Models */,
 				E8F04D81262337DC0005276D /* Modules */,
-				E8F04D2C26232BA90005276D /* Assets.xcassets */,
-				E8F04D2E26232BA90005276D /* LaunchScreen.storyboard */,
-				E8F04D3126232BA90005276D /* Info.plist */,
 			);
 			path = groceryApp;
 			sourceTree = "<group>";
@@ -237,6 +306,7 @@
 		E8F04D4526232F3E0005276D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E849F042262650D90023ACC7 /* QuantityView */,
 				E8F04D9226233E260005276D /* loadingView */,
 				E8F04D4F26232F500005276D /* BaseWireFrame.swift */,
 				E8F04D4626232F3E0005276D /* NibLoadingView.swift */,
@@ -340,6 +410,8 @@
 		E8F04D81262337DC0005276D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E8B159AA2625F13E00D7C3C7 /* mapVc */,
+				E8B159A42625F13C00D7C3C7 /* RegisterOrdersViewController */,
 				E846E3432623696B00474CB0 /* orderDetailes */,
 				E8F04D8826233DB50005276D /* My orders */,
 				E8FE12F5262398E7005BC01A /* AddRate */,
@@ -381,6 +453,7 @@
 			children = (
 				E8F04D9A26233FBE0005276D /* OrdersModelElement.swift */,
 				E8FE12F826239F90005BC01A /* ReviewModel.swift */,
+				E8B159C02625FBB900D7C3C7 /* locationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -494,14 +567,18 @@
 				E8F04D8E26233DB50005276D /* OrderCell.xib in Resources */,
 				E846E3482623696B00474CB0 /* orderDetailesViewController.xib in Resources */,
 				E8F04D79262330160005276D /* Cairo-SemiBold.ttf in Resources */,
+				E8B159BB2625F13E00D7C3C7 /* mapTableViewCell.xib in Resources */,
 				E846E34D2623793000474CB0 /* ItemOfOrderTableViewCell.xib in Resources */,
 				E8F04D7A262330160005276D /* BahijJanna-Regular.ttf in Resources */,
 				E8F04D7D262330160005276D /* Cairo-Black.ttf in Resources */,
 				E8F04D3026232BA90005276D /* LaunchScreen.storyboard in Resources */,
+				E849F046262650D90023ACC7 /* QuantityView.xib in Resources */,
 				E8F04D78262330160005276D /* Cairo-ExtraLight.ttf in Resources */,
+				E8B159C52625FD5F00D7C3C7 /* RegisterOrdersViewController.xib in Resources */,
 				E8F04D2D26232BA90005276D /* Assets.xcassets in Resources */,
 				E8F04D7E262330160005276D /* Cairo-Bold.ttf in Resources */,
 				E8F04D9526233E260005276D /* LoadingView.xib in Resources */,
+				E8B159BA2625F13E00D7C3C7 /* mapViewController.xib in Resources */,
 				E8FE12F4262398D6005BC01A /* AddRateViewController.xib in Resources */,
 				E8F04D7C262330160005276D /* Cairo-Light.ttf in Resources */,
 			);
@@ -591,23 +668,30 @@
 				E8F04D76262330160005276D /* Typography.swift in Sources */,
 				E8F04D5E26232FC10005276D /* OrderRouter.swift in Sources */,
 				E8FE12F926239F90005BC01A /* ReviewModel.swift in Sources */,
+				E849F045262650D90023ACC7 /* QuantityView.swift in Sources */,
 				E8F04D77262330160005276D /* CustomFontDiscriptor.swift in Sources */,
 				E8F04D9926233F3A0005276D /* MyOrdersViewModel.swift in Sources */,
+				E8B159C42625FD5F00D7C3C7 /* RegisterOrdersViewController.swift in Sources */,
 				E8F04D4C26232F3F0005276D /* Extension+ViewController.swift in Sources */,
 				E846E34C2623793000474CB0 /* ItemOfOrderTableViewCell.swift in Sources */,
 				E8F04D74262330160005276D /* DesignSystem.swift in Sources */,
+				E8B159BC2625F13E00D7C3C7 /* mapTableViewCell.swift in Sources */,
 				E8F04D4B26232F3F0005276D /* UIview+Extensions.swift in Sources */,
 				E8F04D5826232F500005276D /* navigator.swift in Sources */,
 				E8F04D5526232F500005276D /* BaseWireFrame.swift in Sources */,
 				E8F04D9B26233FBE0005276D /* OrdersModelElement.swift in Sources */,
 				E8F04D9E262342B60005276D /* OrdersRepository.swift in Sources */,
+				E8B159B92625F13E00D7C3C7 /* mapViewController.swift in Sources */,
+				E8B159C12625FBB900D7C3C7 /* locationModel.swift in Sources */,
 				E8F04D9026233DB50005276D /* MyOrders.swift in Sources */,
 				E8F04D75262330160005276D /* Color.swift in Sources */,
+				E8B159BD2625F13E00D7C3C7 /* mapViewModel.swift in Sources */,
 				E8F04D2426232B9C0005276D /* AppDelegate.swift in Sources */,
 				E8F04D5F26232FC10005276D /* APIRouter.swift in Sources */,
 				E8FE12F726239903005BC01A /* AddrateViewModel.swift in Sources */,
 				E8F04D4A26232F3F0005276D /* NibLoadingView.swift in Sources */,
 				E8F04D80262330170005276D /* Font.swift in Sources */,
+				E8B159BF2625FA9300D7C3C7 /* RegisterOrderViewModel.swift in Sources */,
 				E846E3472623696B00474CB0 /* orderDetailesViewModel.swift in Sources */,
 				E8FE12F3262398D6005BC01A /* AddRateViewController.swift in Sources */,
 				E8F04D8F26233DB50005276D /* OrderCell.swift in Sources */,
@@ -637,6 +721,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		E8B159AE2625F13E00D7C3C7 /* mapViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8B159AF2625F13E00D7C3C7 /* Base */,
+			);
+			name = mapViewController.xib;
+			sourceTree = "<group>";
+		};
 		E8F04D2E26232BA90005276D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -769,7 +861,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L6VZS75SYY;
-				INFOPLIST_FILE = groceryApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/groceryApp/Commen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -788,7 +880,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L6VZS75SYY;
-				INFOPLIST_FILE = groceryApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/groceryApp/Commen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

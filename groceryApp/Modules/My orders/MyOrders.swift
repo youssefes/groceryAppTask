@@ -42,8 +42,7 @@ class MyOrders : BaseWireFrame<MyOrdersViewModel> {
     override func bind(ViewModel: MyOrdersViewModel) {
         // MARK: - SetupTableView
         SetupTableView()
-        
-        ViewModel.getShopper()
+
         tableView.rx.setDelegate(self).disposed(by: disposePag)
         
         // MARK: - bind OrderData
@@ -67,6 +66,10 @@ class MyOrders : BaseWireFrame<MyOrdersViewModel> {
         
     }
     
+    @IBAction func newOrder(_ sender: Any) {
+        let RegisterVc = coordinator.mainNavigator.viewController(for: .RegisterOrder)
+        navigationController?.pushViewController(RegisterVc, animated: true)
+    }
 }
 
 
